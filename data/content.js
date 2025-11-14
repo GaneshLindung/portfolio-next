@@ -45,12 +45,12 @@ export const skills = {
 
 export const projects = [
   {
-    title: 'Desain Grafis',
-    period: '2024',
+    title: 'Portofolio',
+    period: '2025',
     description:
-      'Pembuatan aset visual untuk proyek desain interior berupa moodboard, skema warna, ilustrasi layout, dan mockup presentasi kepada klien.',
-    tags: ['Figma', 'Illustrator', 'Canva'],
-    link: 'https://dribbble.com/ganeshlindung'
+      'Pembuatan aset visual untuk proyek portofolio berbasis Next.js, mencakup penyusunan moodboard desain dan pengembangan antarmuka pengguna.',
+    tags: ['Next.js', 'React', 'JavaScript'],
+    link: 'https://github.com/GaneshLindung/portfolio-next'
   },
   {
     title: 'Sistem Presensi QR Code',
@@ -58,7 +58,7 @@ export const projects = [
     description:
       'Aplikasi presensi siswa dan guru berbasis web dengan pemindaian QR, dashboard rekap realtime, dan integrasi ekspor laporan.',
     tags: ['PHP', 'Javascript', 'Html', 'CSS'],
-    link: 'http://smkmuhikaqr.my.id/'
+    link: 'https://github.com/GaneshLindung/presensi-qr-code'
   }
 ];
 

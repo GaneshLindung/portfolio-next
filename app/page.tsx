@@ -1,0 +1,25 @@
+import Header from '../components/Header';
+import Hero from '../components/Hero';
+import About from '../components/About';
+import SkillsSection from '../components/SkillsSection';
+import ProjectsSection from '../components/ProjectsSection';
+import ExperienceSection from '../components/ExperienceSection';
+import Testimonials from '../components/Testimonials';
+import ContactSection from '../components/ContactSection';
+import Footer from '../components/Footer';
+
+export default function HomePage() {
+  return (
+    <main>
+      <Header />
+      <Hero />
+      <About />
+      <SkillsSection />
+      <ProjectsSection />
+      <ExperienceSection />
+      <Testimonials />
+      <ContactSection />
+      <Footer />
+    </main>
+  );
+}

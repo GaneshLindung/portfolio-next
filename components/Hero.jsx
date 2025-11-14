@@ -1,4 +1,7 @@
+'use client';
+
 import { profile } from '../data/content';
+import { triggerButtonGlow } from '../lib/triggerButtonGlow';
 
 export default function Hero() {
   return (
@@ -6,7 +9,10 @@ export default function Hero() {
       <div className="blur-blob hero-blob-1" />
       <div className="blur-blob hero-blob-2" />
       <div className="container">
-        <div className="glass" style={{ padding: '3rem', borderRadius: '1.75rem', position: 'relative', overflow: 'hidden' }}>
+        <div
+          className="glass"
+          style={{ padding: '3rem', borderRadius: '1.75rem', position: 'relative', overflow: 'hidden' }}
+        >
           <div
             style={{
               position: 'absolute',
@@ -16,7 +22,7 @@ export default function Hero() {
             }}
           />
           <div style={{ position: 'relative', display: 'grid', gap: '2rem' }}>
-            <div style={{ display: 'flex', gap: '2rem', alignItems: 'center', marginLeft: '1.4rem',color: 'rgba(148, 163, 184, 0.85)' }}>
+            <div style={{ display: 'flex', gap: '2rem', alignItems: 'center', marginLeft: '1.4rem', color: 'rgba(148, 163, 184, 0.85)' }}>
               <span
                 style={{
                   display: 'inline-flex',
@@ -47,10 +53,15 @@ export default function Hero() {
                 </p>
               </div>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem' }}>
-                <a href="#proyek" className="button">
+                <a href="#proyek" className="button" onClick={triggerButtonGlow}>
                   Lihat Proyek Unggulan
                 </a>
-                <a href="#kontak" className="button" style={{ background: 'rgba(15,23,42,0.7)', color: '#5eead4', border: '1px solid rgba(94, 234, 212, 0.35)' }}>
+                <a
+                  href="#kontak"
+                  className="button"
+                  onClick={triggerButtonGlow}
+                  style={{ background: 'rgba(15,23,42,0.7)', color: '#5eead4', border: '1px solid rgba(94, 234, 212, 0.35)' }}
+                >
                   Jadwalkan Diskusi
                 </a>
               </div>
