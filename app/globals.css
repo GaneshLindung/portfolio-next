@@ -820,4 +820,9 @@ ul {
   .testimonial-card {
     padding: 1.6rem;
   }
+
+  .contact-card {
+    justify-content: center;
+    width: min(calc(100% - 1.5rem), 420px);
+  }
 }
