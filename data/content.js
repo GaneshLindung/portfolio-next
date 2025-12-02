@@ -59,6 +59,14 @@ export const projects = [
       'Aplikasi presensi siswa dan guru berbasis web dengan pemindaian QR, dashboard rekap realtime, dan integrasi ekspor laporan.',
     tags: ['PHP', 'Javascript', 'Html', 'CSS'],
     link: 'https://github.com/GaneshLindung/presensi-qr-code'
+  },
+  {
+    title: 'Portal Berita',
+    period: '2024',
+    description:
+      'Portal berita dengan manajemen artikel, kategori, dan pencarian untuk kurasi konten yang rapi, lengkap dengan alur editor agar informasi tetap konsisten.',
+    tags: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
+    link: 'https://github.com/GaneshLindung/portal-berita'
   }
 ];
 
