@@ -78,6 +78,19 @@ export const projects = [
   }
 ];
 
+export const certifications = [
+  {
+    title: 'Sertifikat Pembekalan 12+ Essential Skills Program Magang Nasional',
+    issuer: 'Gerakan Nasional Indonesia Kompeten (GNIK) & Kementerian Ketenagakerjaan RI',
+    period: 'Jakarta, 30 Desember 2024',
+    description:
+      'Topik Design Thinking dengan nilai 100. Mencakup penerapan kerangka berpikir desain untuk riset, ideasi, dan validasi solusi, sebagaimana diselenggarakan oleh GNIK berkolaborasi dengan Kementerian Ketenagakerjaan RI.',
+    file: '/certifications/pembekalan-essential-skills-gnik.pdf',
+    image: '/certifications/pembekalan-essential-skills-gnik.jpg'
+  }
+];
+
+
 export const experiences = [
   {
     role: 'Staff Web Master',

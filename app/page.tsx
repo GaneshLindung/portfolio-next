@@ -4,6 +4,7 @@ import About from '../components/About';
 import SkillsSection from '../components/SkillsSection';
 import ProjectsSection from '../components/ProjectsSection';
 import ExperienceSection from '../components/ExperienceSection';
+import CertificationsSection from '../components/CertificationsSection';
 import Testimonials from '../components/Testimonials';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
@@ -18,6 +19,7 @@ export default function HomePage() {
         <SkillsSection />
         <ProjectsSection />
         <ExperienceSection />
+        <CertificationsSection />
         <Testimonials />
         <ContactSection />
         <Footer />
