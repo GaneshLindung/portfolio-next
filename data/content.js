@@ -70,7 +70,7 @@ export const projects = [
   },
   {
     title: 'Portal Berita',
-    period: '2024',
+    period: '2025',
     description:
       'Portal berita dengan manajemen artikel, kategori, dan pencarian untuk kurasi konten yang rapi, lengkap dengan alur editor agar informasi tetap konsisten.',
     tags: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
@@ -92,16 +92,6 @@ export const experiences = [
     ]
   },
   {
-    role: 'Graphic Designer',
-    company: 'PT Dua Dua Disain Indonesia',
-    period: 'Februari 2024 - April 2024',
-    achievements: [
-      'Membuat 10+ ide konten termasuk feeds serta story media sosial instagram.',
-      'Mengelola 2 brand media sosial perusahaan, termasuk perencanaan konten dan konsistensi visual.',
-      'Berkontribusi dalam pengelolaan brand wedding dan desain interior melalui pembuatan materi promosi dan konsep visual yang sesuai karakter brand.'
-    ]
-  },
-  {
     role: 'Trainer RPL',
     company: 'SMK Muhammadiyah Campaka',
     period: 'September 2024 - Desember 2024',
@@ -109,6 +99,16 @@ export const experiences = [
       'Mengajar mata pelajaran Pemrograman Web Dasar dan Desain Grafis untuk siswa kelas X dan XI RPL.',
       'Menyusun RPP (Rencana Pelaksanaan Pembelajaran), materi ajar (slide, modul, dan latihan), serta soal evaluasi harian dan ujian.',
       'Membantu siswa mengembangkan portofolio dasar di bidang pemrograman web dan desain grafis.'
+    ]
+  },
+  {
+    role: 'Graphic Designer',
+    company: 'PT Dua Dua Disain Indonesia',
+    period: 'Februari 2024 - April 2024',
+    achievements: [
+      'Membuat 10+ ide konten termasuk feeds serta story media sosial instagram.',
+      'Mengelola 2 brand media sosial perusahaan, termasuk perencanaan konten dan konsistensi visual.',
+      'Berkontribusi dalam pengelolaan brand wedding dan desain interior melalui pembuatan materi promosi dan konsep visual yang sesuai karakter brand.'
     ]
   }
 ];
