@@ -2,11 +2,6 @@ import Image from 'next/image';
 
 import { certifications } from '../data/content';
 
-const resolveJpgPath = (path) => {
-  if (!path) return '';
-  return path.replace(/\.svg(\?.*)?$/i, '.jpg');
-};
-
 export default function CertificationsSection() {
   return (
     <section id="sertifikasi">
@@ -43,7 +38,7 @@ export default function CertificationsSection() {
                     }}
                   >
                     <Image
-                      src={resolveJpgPath(certification.image)}
+                      src={certification.image}
                       alt={`Sertifikat ${certification.title}`}
                       width={1754}
                       height={1242}
