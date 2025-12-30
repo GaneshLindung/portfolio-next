@@ -45,6 +45,14 @@ export const skills = {
 
 export const projects = [
   {
+    title: 'E-commerce',
+    period: '2025',
+    description:
+      'Prototipe toko online dengan katalog produk, keranjang belanja, dan alur checkout sederhana untuk menampilkan pengalaman belanja end-to-end.',
+    tags: ['JavaScript', 'React', 'Typescript', 'Next.js'],
+    link: 'https://github.com/GaneshLindung/ecommerce'
+  },
+  {
     title: 'Portofolio',
     period: '2025',
     description:
@@ -71,6 +79,18 @@ export const projects = [
 ];
 
 export const experiences = [
+  {
+    role: 'Staff Web Master',
+    company: 'SIT Auladi Palembang',
+    period: '16 Desember 2025 - 15 Juni 2026',
+    achievements: [
+      'Memastikan website selalu ter-update, rapi, dan sesuai standar kualitas konten yang diberikan.',
+      'Menerapkan basic on-page SEO (meta title, description, internal link, alt text) pada 100% konten.',
+      'Menjaga akurasi dan kerapian konten dengan tingkat typo di bawah 2% per artikel.',
+      'Memelihara website melalui perbaikan broken link, pembaruan halaman, dan optimasi media.',
+      'Menyusun laporan bulanan berisi konten terbit, update halaman, dan insight performa dasar sesuai SOP.'
+    ]
+  },
   {
     role: 'Graphic Designer',
     company: 'PT Dua Dua Disain Indonesia',
