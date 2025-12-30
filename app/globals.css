@@ -499,9 +499,10 @@ ul {
 
 .certification-image {
   width: 100%;
-  height: auto;
-  max-height: 360px;
+  height: clamp(220px, 32vw, 320px);
+  max-height: none;
   object-fit: contain;
+  aspect-ratio: 7 / 5;
   display: block;
   border-radius: 1rem;
   border: 1px solid rgba(148, 163, 184, 0.18);

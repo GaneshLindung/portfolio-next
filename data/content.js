@@ -95,7 +95,7 @@ export const certifications = [
     description:
       'Pengakuan kompetensi dalam merancang, mengonfigurasi, dan memelihara infrastruktur jaringan level pemula sesuai skema okupasi BNSP.',
     file: '/certifications/sertifikasi-bnsp-jna.pdf',
-    image: '/certifications/sertifikasi-bnsp-jna.jpg'
+  image: '/certifications/sertifikasi-bnsp-jna.jpg'
   }
 ];
 

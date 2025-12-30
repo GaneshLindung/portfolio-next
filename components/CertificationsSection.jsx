@@ -1,6 +1,3 @@
-+13
--13
-
 import Image from 'next/image';
 
 import { certifications } from '../data/content';
