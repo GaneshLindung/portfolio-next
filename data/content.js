@@ -82,11 +82,20 @@ export const certifications = [
   {
     title: 'Sertifikat Pembekalan 12+ Essential Skills Program Magang Nasional',
     issuer: 'Gerakan Nasional Indonesia Kompeten (GNIK) & Kementerian Ketenagakerjaan RI',
-    period: 'Jakarta, 30 Desember 2024',
+    period: 'Jakarta, 30 Desember 2025',
     description:
       'Topik Design Thinking dengan nilai 100. Mencakup penerapan kerangka berpikir desain untuk riset, ideasi, dan validasi solusi, sebagaimana diselenggarakan oleh GNIK berkolaborasi dengan Kementerian Ketenagakerjaan RI.',
     file: '/certifications/pembekalan-essential-skills-gnik.pdf',
     image: '/certifications/pembekalan-essential-skills-gnik.jpg'
+  },
+  {
+    title: 'Sertifikasi BNSP Junior Network Administrator',
+    issuer: 'Badan Nasional Sertifikasi Profesi (BNSP)',
+    period: 'Bekasi, 26 September 2024',
+    description:
+      'Pengakuan kompetensi dalam merancang, mengonfigurasi, dan memelihara infrastruktur jaringan level pemula sesuai skema okupasi BNSP.',
+    file: '/certifications/sertifikasi-bnsp-jna.pdf',
+    image: '/certifications/sertifikasi-bnsp-jna.jpg'
   }
 ];
 

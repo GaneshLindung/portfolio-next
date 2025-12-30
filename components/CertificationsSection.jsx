@@ -1,4 +1,14 @@
++13
+-13
+
+import Image from 'next/image';
+
 import { certifications } from '../data/content';
+
+const resolveJpgPath = (path) => {
+  if (!path) return '';
+  return path.replace(/\.svg(\?.*)?$/i, '.jpg');
+};
 
 export default function CertificationsSection() {
   return (
@@ -35,20 +45,13 @@ export default function CertificationsSection() {
                       justifySelf: 'center'
                     }}
                   >
-                    <img
-                      src={certification.image}
+                    <Image
+                      src={resolveJpgPath(certification.image)}
                       alt={`Sertifikat ${certification.title}`}
-                      style={{
-                        width: '100%',
-                        maxHeight: '360px',
-                        objectFit: 'contain',
-                        display: 'block',
-                        borderRadius: '1rem',
-                        border: '1px solid rgba(148, 163, 184, 0.18)',
-                        background: 'rgba(15, 23, 42, 0.6)',
-                        padding: '0.6rem',
-                        boxShadow: '0 16px 50px rgba(0,0,0,0.18)'
-                      }}
+                      width={1754}
+                      height={1242}
+                      className="certification-image"
+                      sizes="(max-width: 1024px) 100vw, 420px"
                     />
                   </a>
                 )}

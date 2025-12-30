@@ -497,6 +497,19 @@ ul {
   color: rgba(148, 163, 184, 0.8);
 }
 
+.certification-image {
+  width: 100%;
+  height: auto;
+  max-height: 360px;
+  object-fit: contain;
+  display: block;
+  border-radius: 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: rgba(15, 23, 42, 0.6);
+  padding: 0.6rem;
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.18);
+}
+
 .project-meta {
   display: flex;
   align-items: center;
