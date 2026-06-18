@@ -6,6 +6,17 @@ const metrics = [
   { value: 'Inklusif', label: 'Audit aksesibilitas tuntas' }
 ];
 
+function HighlightIcon() {
+  return (
+    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="5" y="5" width="6" height="6" rx="1.4" stroke="currentColor" strokeWidth="1.5" />
+      <rect x="15" y="5" width="6" height="6" rx="1.4" stroke="currentColor" strokeWidth="1.5" />
+      <rect x="5" y="15" width="6" height="6" rx="1.4" stroke="currentColor" strokeWidth="1.5" />
+      <rect x="15" y="15" width="6" height="6" rx="1.4" stroke="currentColor" strokeWidth="1.5" />
+    </svg>
+  );
+}
+
 export default function SkillsSection() {
   return (
     <section id="keahlian" className="skills-section">
@@ -83,21 +94,20 @@ export default function SkillsSection() {
             </div>
           </article>
           {skills.highlights.map((highlight) => (
-            <article key={highlight.title} className="skill-panel skill-highlight">
-              <span className="skill-panel__icon skill-panel__icon--highlight" aria-hidden="true">
-                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M13 3.25L15.5312 9.34375L22.75 9.90625L17.125 14.375L18.9375 21.5L13 17.9375L7.0625 21.5L8.875 14.375L3.25 9.90625L10.4688 9.34375L13 3.25Z"
-                    stroke="currentColor"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
+            <article key={highlight.title} className="skill-panel">
+              <span className={`skill-panel__icon skill-panel__icon--${highlight.icon}`} aria-hidden="true">
+                <HighlightIcon />
               </span>
               <div className="skill-panel__body">
                 <h3 className="skill-panel__title">{highlight.title}</h3>
                 <p className="skill-panel__description">{highlight.description}</p>
+                <div className="tag-grid">
+                  {highlight.tools.map((item) => (
+                    <span key={item} className="tag">
+                      {item}
+                    </span>
+                  ))}
+                </div>
               </div>
             </article>
           ))}

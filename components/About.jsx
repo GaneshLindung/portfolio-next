@@ -3,18 +3,18 @@ import { profile } from '../data/content';
 export default function About() {
   return (
     <section id="tentang">
-      <div className="container" style={{ display: 'grid', gap: '2.5rem' }}>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+      <div className="container about-layout">
+        <div className="about-copy">
           <span className="section-kicker">Tentang Saya</span>
-          <h2 className="section-heading">Membangun produk digital yang terasa manusiawi</h2>
+          <h2 className="section-heading">Membangun pengalaman digital yang rapi dan mudah digunakan</h2>
           <p className="section-paragraph">
-            Saya adalah front-end engineer dengan fokus pada pengalaman pengguna, desain sistem, dan performa. Selama
-            lima tahun terakhir saya membantu startup dan perusahaan enterprise meluncurkan produk digital yang
-            berdampak, memadukan desain elegan dengan arsitektur front-end yang skalabel.
+            Saya adalah pengembang web dengan fokus pada pengalaman pengguna, kerapian konten, dan performa website.
+            Saya terbiasa mengelola serta mengembangkan platform digital sekolah, mulai dari website informasi, LMS,
+            portal berita, hingga sistem administrasi berbasis web.
           </p>
           <p className="section-paragraph">
-            Saat tidak sedang menulis kode, saya menyusun dokumentasi desain, membuat prototipe interaktif, dan
-            mengeksplorasi cara-cara baru untuk meningkatkan kolaborasi antara produk, desain, dan engineering.
+            Dalam setiap proyek, saya berusaha menjaga tampilan tetap bersih, alur penggunaan mudah dipahami, dan
+            konten tersusun dengan baik agar website bisa membantu kebutuhan pengguna secara nyata.
           </p>
         </div>
         <div className="about-cards">
@@ -28,11 +28,11 @@ export default function About() {
           </div>
           <div className="about-card">
             <h3>Fokus Saat Ini</h3>
-            <p>Mengembangkan platform SaaS dengan Next.js 14 dan desain sistem adaptif.</p>
+            <p>Mengelola dan mengembangkan website sekolah dengan fokus pada konten, SEO dasar, dan pengalaman pengguna.</p>
           </div>
           <div className="about-card">
             <h3>Karya Terakhir</h3>
-            <p>Mengembangkan sistem presensi berbasis QR code dengan PHP native.</p>
+            <p>Membangun platform digital sekolah seperti LMS, portal berita, seminar parenting, dan Raporguru.</p>
           </div>
         </div>
       </div>

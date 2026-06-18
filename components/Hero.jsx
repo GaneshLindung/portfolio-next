@@ -9,19 +9,9 @@ export default function Hero() {
       <div className="blur-blob hero-blob-1" />
       <div className="blur-blob hero-blob-2" />
       <div className="container">
-        <div
-          className="glass"
-          style={{ padding: '3rem', borderRadius: '1.75rem', position: 'relative', overflow: 'hidden' }}
-        >
-          <div
-            style={{
-              position: 'absolute',
-              inset: 0,
-              background: 'radial-gradient(circle at top right, rgba(56, 189, 248, 0.25), transparent 55%)',
-              pointerEvents: 'none'
-            }}
-          />
-          <div style={{ position: 'relative', display: 'grid', gap: '2rem' }}>
+        <div className="glass hero-card">
+          <div className="hero-card__glow" />
+          <div className="hero-card__content">
             <div style={{ display: 'flex', gap: '2rem', alignItems: 'center', marginLeft: '1.4rem', color: 'rgba(148, 163, 184, 0.85)' }}>
               <span
                 style={{
@@ -80,4 +70,4 @@ export default function Hero() {
   );
 }
 
-const skillsSummary = ['Next.js', 'Motion Design', 'Design Systems', 'Performance Audit'];
+const skillsSummary = ['PHP', 'JavaScript', 'WordPress', 'SEO Dasar'];

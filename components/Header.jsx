@@ -10,7 +10,7 @@ const navItems = [
   { href: '#proyek', label: 'Proyek' },
   { href: '#pengalaman', label: 'Pengalaman' },
   { href: '#sertifikasi', label: 'Sertifikasi' },
-  { href: '#kontak', label: 'Kontak' }
+  { href: '#testimoni', label: 'Testimoni' }
 ];
 
 const toTitleCase = (value) =>

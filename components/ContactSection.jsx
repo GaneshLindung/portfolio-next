@@ -43,8 +43,9 @@ export default function ContactSection() {
           </div>
           <div>
             <p style={{ color: 'rgba(148, 163, 184, 0.8)', lineHeight: 1.6 }}>
-              Preferensi kolaborasi: produk SaaS, platform edukasi, dan pengalaman digital yang berorientasi komunitas.
-              Sesi discovery call gratis selama 30 menit tersedia.
+              Preferensi kolaborasi: website sekolah, platform edukasi, publikasi konten, dan sistem administrasi
+              berbasis web. Terbuka untuk diskusi kebutuhan, perapian konten, serta pengembangan fitur yang membantu
+              operasional digital berjalan lebih praktis.
             </p>
           </div>
           <div className="social-links">

@@ -1,8 +1,8 @@
 export const profile = {
   name: 'Ganesh Lindung Nusantara',
-  title: 'Front-end Engineer & UI Craftsman',
+  title: 'Web Developer & Website Administrator',
   description:
-    'Membangun pengalaman digital yang memadukan estetika dan performa. Spesialis Next.js, animasi halus, dan kolaborasi lintas disiplin.',
+    'Mengembangkan dan mengelola website sekolah yang rapi, informatif, dan mudah digunakan. Berpengalaman membangun LMS, portal berita, halaman kegiatan, serta sistem administrasi berbasis web.',
   location: 'Palembang, Indonesia',
   availability: 'Tersedia untuk kolaborasi remote & onsite',
   email: 'ganeshnusantara@gmail.com',
@@ -28,63 +28,68 @@ export const skills = {
     {
       title: 'Desain Sistem Komponen',
       description:
-        'Membangun UI kit adaptif dengan dokumentasi Storybook yang meningkatkan konsistensi dan kecepatan pengembangan.'
-    },
-    {
-      title: 'Performa & Aksesibilitas',
-      description:
-        'Optimasi web vitals, audit Lighthouse, dan penerapan praktik aksesibilitas untuk pengalaman pengguna yang lebih inklusif.'
-    },
-    {
-      title: 'Integrasi Produk',
-      description:
-        'Menghubungkan front-end dengan backend modern menggunakan GraphQL/REST, autentikasi aman, dan observabilitas real-time.'
+        'Membangun UI kit adaptif dengan dokumentasi Storybook yang meningkatkan konsistensi dan kecepatan pengembangan.',
+      icon: 'system',
+      tools: ['Storybook', 'Figma', 'React', 'Tailwind CSS', 'Chromatic', 'Tokens']
     }
   ]
 };
 
 export const projects = [
   {
-    title: 'E-commerce',
-    period: '2025',
+    title: 'LMS Sekolah',
+    period: '2026',
     description:
-      'Prototipe toko online dengan katalog produk, keranjang belanja, dan alur checkout sederhana untuk menampilkan pengalaman belanja end-to-end.',
-    tags: ['JavaScript', 'React', 'Typescript', 'Next.js'],
-    link: 'https://github.com/GaneshLindung/ecommerce'
+      'Learning Management System sekolah yang mendukung pembelajaran digital melalui pengelolaan materi, tugas, kelas, dan akses belajar siswa maupun guru dalam satu platform.',
+    image: '/certifications/lms.png',
+    tags: ['PHP', 'Html', 'CSS', 'JavaScript'],
+    link: 'https://lms-jakabaring.sitauladi.sch.id/'
   },
   {
-    title: 'Portofolio',
-    period: '2025',
+    title: 'Berita Sekolah dan Media',
+    period: '2026',
     description:
-      'Pembuatan aset visual untuk proyek portofolio berbasis Next.js, mencakup penyusunan moodboard desain dan pengembangan antarmuka pengguna.',
-    tags: ['Next.js', 'React', 'JavaScript'],
-    link: 'https://github.com/GaneshLindung/portfolio-next'
+      'Website berita dan media sekolah yang digunakan untuk mempublikasikan informasi, dokumentasi kegiatan, artikel, dan konten sekolah secara terstruktur.',
+    image: '/certifications/BeritaSekolah.png',
+    tags: ['WordPress'],
+    link: 'https://sitauladi.sch.id/berita-media/'
   },
   {
-    title: 'Sistem Presensi QR Code',
-    period: '2025',
+    title: 'Seminar Parenting',
+    period: '2026',
     description:
-      'Aplikasi presensi siswa dan guru berbasis web dengan pemindaian QR, dashboard rekap realtime, dan integrasi ekspor laporan.',
-    tags: ['PHP', 'Javascript', 'Html', 'CSS'],
-    link: 'https://github.com/GaneshLindung/presensi-qr-code'
+      'Platform seminar parenting yang digunakan untuk menampilkan informasi kegiatan, pendaftaran peserta, dan pengelolaan data seminar secara online.',
+    image: '/certifications/SeminarParenting.png',
+    tags: ['PHP', 'JavaScript', 'Html', 'CSS'],
+    link: 'https://parenting.sitauladi.sch.id/'
   },
   {
-    title: 'Portal Berita',
-    period: '2025',
+    title: 'Raporguru',
+    period: '2026',
     description:
-      'Portal berita dengan manajemen artikel, kategori, dan pencarian untuk kurasi konten yang rapi, lengkap dengan alur editor agar informasi tetap konsisten.',
-    tags: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
-    link: 'https://github.com/GaneshLindung/portal-berita'
+      'Aplikasi untuk membantu guru dalam mengelola rapor kinerja, penilaian, dan administrasi akademik secara digital.',
+    image: '/certifications/RaporGuru.png',
+    tags: ['PHP', 'JavaScript', 'Html', 'CSS'],
+    link: 'https://raporguru.sitauladi.sch.id/'
   }
 ];
 
 export const certifications = [
   {
-    title: 'Sertifikat Pembekalan 12+ Essential Skills Program Magang Nasional',
+    title: 'Piagam Penghargaan Magang KEMNAKER',
+    issuer: 'Kementerian Ketenagakerjaan RI (KEMNAKER) & SIT Auladi Palembang',
+    period: 'Palembang, 16 Juni 2026',
+    description:
+      'Piagam penghargaan atas dedikasi dan kontribusi selama menjalani program magang HUB Batch 3 di lingkungan SIT Auladi Palembang, periode 16 Desember 2025 - 16 Juni 2026.',
+    file: '/certifications/KEMNAKER.pdf',
+    image: '/certifications/KEMNAKER.jpg'
+  },
+  {
+    title: 'Sertifikat 12+ Essential Skills Magang Nasional',
     issuer: 'Gerakan Nasional Indonesia Kompeten (GNIK) & Kementerian Ketenagakerjaan RI',
     period: 'Jakarta, 30 Desember 2025',
     description:
-      'Topik Design Thinking dengan nilai 100. Mencakup penerapan kerangka berpikir desain untuk riset, ideasi, dan validasi solusi, sebagaimana diselenggarakan oleh GNIK berkolaborasi dengan Kementerian Ketenagakerjaan RI.',
+      'Sertifikat pembekalan dengan topik Design Thinking dan nilai 100, mencakup dasar riset, ideasi, validasi solusi, serta kesiapan mengikuti program magang nasional.',
     file: '/certifications/pembekalan-essential-skills-gnik.pdf',
     image: '/certifications/pembekalan-essential-skills-gnik.jpg'
   },
@@ -95,7 +100,7 @@ export const certifications = [
     description:
       'Pengakuan kompetensi dalam merancang, mengonfigurasi, dan memelihara infrastruktur jaringan level pemula sesuai skema okupasi BNSP.',
     file: '/certifications/sertifikasi-bnsp-jna.pdf',
-  image: '/certifications/sertifikasi-bnsp-jna.jpg'
+    image: '/certifications/sertifikasi-bnsp-jna.jpg'
   }
 ];
 
@@ -136,6 +141,12 @@ export const experiences = [
 ];
 
 export const testimonials = [
+  {
+    name: 'Nahrul Aidin',
+    title: 'Social Media Team Coordinator, SIT Auladi Palembang',
+    quote:
+      'Selama kurang lebih enam bulan magang di SIT Auladi Palembang, Ganesh konsisten mengunggah artikel berita setiap bulan. Kontribusinya membantu website sitauladi.sch.id mengalami peningkatan view/pengunjung kurang lebih 6x dari sebelumnya.'
+  },
   {
     name: 'Desty Gita',
     title: 'Creative Team, PT Dua Dua Disain Indonesia',
