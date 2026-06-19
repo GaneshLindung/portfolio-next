@@ -1,6 +1,7 @@
 import Image from 'next/image';
 
 import { projects } from '../data/content';
+import TechIcon from './TechIcon';
 
 export default function ProjectsSection() {
   return (
@@ -47,9 +48,7 @@ export default function ProjectsSection() {
                   <p>{project.description}</p>
                   <div className="tag-grid project-tags">
                     {project.tags.map((tag) => (
-                      <span key={tag} className="tag">
-                        {tag}
-                      </span>
+                      <TechIcon key={tag} name={tag} />
                     ))}
                   </div>
                 </div>

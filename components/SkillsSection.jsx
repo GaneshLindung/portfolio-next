@@ -1,21 +1,11 @@
 import { skills } from '../data/content';
+import TechIcon from './TechIcon';
 
 const metrics = [
   { value: 'Modular', label: 'Komponen UI reusable' },
   { value: 'Adaptif', label: 'Produk digital shipping' },
   { value: 'Inklusif', label: 'Audit aksesibilitas tuntas' }
 ];
-
-function HighlightIcon() {
-  return (
-    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect x="5" y="5" width="6" height="6" rx="1.4" stroke="currentColor" strokeWidth="1.5" />
-      <rect x="15" y="5" width="6" height="6" rx="1.4" stroke="currentColor" strokeWidth="1.5" />
-      <rect x="5" y="15" width="6" height="6" rx="1.4" stroke="currentColor" strokeWidth="1.5" />
-      <rect x="15" y="15" width="6" height="6" rx="1.4" stroke="currentColor" strokeWidth="1.5" />
-    </svg>
-  );
-}
 
 export default function SkillsSection() {
   return (
@@ -41,17 +31,6 @@ export default function SkillsSection() {
         </div>
         <div className="skills-grid">
           <article className="skill-panel">
-            <span className="skill-panel__icon skill-panel__icon--stack" aria-hidden="true">
-              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M13 3.25L3.25 8.125L13 13L22.75 8.125L13 3.25ZM3.25 13L13 17.875L22.75 13M3.25 17.875L13 22.75L22.75 17.875"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </span>
             <div className="skill-panel__body">
               <h3 className="skill-panel__title">Stack Utama</h3>
               <p className="skill-panel__description">
@@ -59,26 +38,12 @@ export default function SkillsSection() {
               </p>
               <div className="tag-grid">
                 {skills.stacks.map((item) => (
-                  <span key={item} className="tag">
-                    {item}
-                  </span>
+                  <TechIcon key={item} name={item} />
                 ))}
               </div>
             </div>
           </article>
           <article className="skill-panel">
-            <span className="skill-panel__icon skill-panel__icon--tools" aria-hidden="true">
-              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M8.125 3.25V8.125H3.25M17.875 3.25V8.125H22.75M8.125 22.75V17.875H3.25M17.875 22.75V17.875H22.75"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <circle cx="13" cy="13" r="3.25" stroke="currentColor" strokeWidth="1.5" />
-              </svg>
-            </span>
             <div className="skill-panel__body">
               <h3 className="skill-panel__title">Tooling & Kolaborasi</h3>
               <p className="skill-panel__description">
@@ -86,26 +51,19 @@ export default function SkillsSection() {
               </p>
               <div className="tag-grid">
                 {skills.tools.map((item) => (
-                  <span key={item} className="tag">
-                    {item}
-                  </span>
+                  <TechIcon key={item} name={item} />
                 ))}
               </div>
             </div>
           </article>
           {skills.highlights.map((highlight) => (
             <article key={highlight.title} className="skill-panel">
-              <span className={`skill-panel__icon skill-panel__icon--${highlight.icon}`} aria-hidden="true">
-                <HighlightIcon />
-              </span>
               <div className="skill-panel__body">
                 <h3 className="skill-panel__title">{highlight.title}</h3>
                 <p className="skill-panel__description">{highlight.description}</p>
                 <div className="tag-grid">
                   {highlight.tools.map((item) => (
-                    <span key={item} className="tag">
-                      {item}
-                    </span>
+                    <TechIcon key={item} name={item} />
                   ))}
                 </div>
               </div>

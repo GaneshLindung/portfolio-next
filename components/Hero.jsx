@@ -1,6 +1,7 @@
 'use client';
 
 import { profile } from '../data/content';
+import TechIcon from './TechIcon';
 import { triggerButtonGlow } from '../lib/triggerButtonGlow';
 
 export default function Hero() {
@@ -58,9 +59,7 @@ export default function Hero() {
             </div>
             <div className="tag-grid" style={{ marginTop: '1rem' }}>
               {skillsSummary.map((item) => (
-                <span key={item} className="tag">
-                  {item}
-                </span>
+                <TechIcon key={item} name={item} />
               ))}
             </div>
           </div>
@@ -70,4 +69,4 @@ export default function Hero() {
   );
 }
 
-const skillsSummary = ['PHP', 'JavaScript', 'WordPress', 'SEO Dasar'];
+const skillsSummary = ['PHP', 'JavaScript', 'WordPress', 'Laravel', 'HTML', 'CSS'];
