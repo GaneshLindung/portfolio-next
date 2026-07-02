@@ -1,11 +1,13 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+import chromium from '@sparticuz/chromium';
 import puppeteer from 'puppeteer-core';
 
 import { profile } from '../../../data/content';
 
 export const dynamic = 'force-dynamic';
+export const maxDuration = 60;
 export const runtime = 'nodejs';
 
 const PDF_VIEWPORT = {
@@ -23,6 +25,10 @@ const CHROME_ARGS = [
 ];
 
 const CHROME_IGNORED_DEFAULT_ARGS = ['--export-tagged-pdf', '--generate-pdf-document-outline'];
+
+function isServerlessRuntime() {
+  return Boolean(process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME);
+}
 
 function candidatePaths() {
   const envPaths = [
@@ -55,6 +61,28 @@ function candidatePaths() {
 
 function findChromeExecutable() {
   return candidatePaths().find((candidate) => fs.existsSync(candidate));
+}
+
+async function resolveChromeLaunchOptions() {
+  if (isServerlessRuntime()) {
+    return {
+      args: [...chromium.args, ...CHROME_ARGS],
+      executablePath: await chromium.executablePath(),
+      headless: 'shell'
+    };
+  }
+
+  const executablePath = findChromeExecutable();
+
+  if (!executablePath) {
+    throw new Error('Chrome atau Edge tidak ditemukan. Set CHROME_PATH atau PUPPETEER_EXECUTABLE_PATH.');
+  }
+
+  return {
+    args: CHROME_ARGS,
+    executablePath,
+    headless: true
+  };
 }
 
 async function waitForFonts(page) {
@@ -127,17 +155,13 @@ async function removePdfOnlyElements(page) {
 }
 
 async function createPdfBuffer(origin) {
-  const executablePath = findChromeExecutable();
-
-  if (!executablePath) {
-    throw new Error('Chrome atau Edge tidak ditemukan. Set CHROME_PATH atau PUPPETEER_EXECUTABLE_PATH.');
-  }
+  const chromeLaunchOptions = await resolveChromeLaunchOptions();
 
   const browser = await puppeteer.launch({
-    args: CHROME_ARGS,
+    args: chromeLaunchOptions.args,
     defaultViewport: PDF_VIEWPORT,
-    executablePath,
-    headless: true,
+    executablePath: chromeLaunchOptions.executablePath,
+    headless: chromeLaunchOptions.headless,
     ignoreDefaultArgs: CHROME_IGNORED_DEFAULT_ARGS
   });
 
